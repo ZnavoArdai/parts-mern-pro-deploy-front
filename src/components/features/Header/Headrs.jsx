@@ -1,19 +1,15 @@
-import React, { useContext} from "react";
+import React, { useContext } from "react";
 import { BsBasket } from "react-icons/bs";
 import { BiStore } from "react-icons/bi";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 import { BsListTask } from "react-icons/bs";
-
-
-
-
 
 import { dataContext } from "../../../context/dataContext";
 
 import "./Headrs.css";
 
 const Headrs = () => {
-  const { orders,products,info,stores,category } = useContext(dataContext);
+  const { orders, products, info, stores, category } = useContext(dataContext);
 
   return (
     <div className="headersContainer container-fluid mt-5 text-center ">
